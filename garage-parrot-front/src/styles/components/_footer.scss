@@ -1,0 +1,56 @@
+// Dans _footer.scss
+.footer {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 2rem 0;
+
+  // Style pour les badges
+  .badge {
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    font-size: 0.875em;
+    font-weight: 700;
+    line-height: 1;
+    color: #121212;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: #bb86fc;
+    margin-right: 0.5rem;
+
+    &.contact-info {
+      svg {
+        margin-right: 0.25rem;
+      }
+    }
+
+    &.opening-hours {
+      margin-top: 0.5rem;
+    }
+  }
+
+  // Style pour les boutons
+  .footer-cta {
+    background-color: #bb86fc;
+    color: white;
+
+    border-radius: 8px;
+    margin: 0.5rem;
+  padding: 0.5em 0.6em;
+    height: 40px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken(#bb86fc, 10%);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+  }
+
+
+}

@@ -1,0 +1,156 @@
+.services-section {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .services-carousel {
+    width: 100%;
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 95%;
+      margin: -1rem 1rem;
+      transform: translateY(-50%);
+      background-color: rgba(187, 134, 252, 0.5);
+
+      // Customize the icons inside the buttons
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+      }
+
+
+    }
+
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      background-color: rgba(187, 134, 252, 0.7);
+    }
+
+
+    .carousel-indicators {
+      top: -50px;
+      position: absolute;
+      z-index: 15;
+
+      button {
+        background-color: #6c757d;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+      }
+    }
+
+
+    .carousel-indicators .active {
+      background-color: #9b51e0;
+
+
+
+
+    }
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+    }
+
+    .carousel-item {
+
+
+      width: 100%;
+
+    }
+
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    // Réglez l'opacité des éléments adjacents à 0 pour les cacher pendant la transition
+    .carousel-item-next,
+    .carousel-item-prev {
+      opacity: 0;
+
+    }
+  }
+
+  .service-card {
+    background-color: #242424;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+    }
+    .card-body {
+      font-size: 0.9rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .service-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .service-description {
+        margin-top: 0.5rem;
+      }
+    }
+
+    .service-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      svg {
+        fill: #bb86fc;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .btn-custom {
+      background-color: #bb86fc;
+      color: white;
+      border: none;
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #9b51e0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

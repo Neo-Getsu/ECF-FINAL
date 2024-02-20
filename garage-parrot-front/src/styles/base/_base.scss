@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #bb86fc;
+  border-radius: 20px;
+  border: 3px solid #333;
+}
+#root  {
+  background-color: rgba(18, 18, 18, 0.93);
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+
+
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #bb86fc;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h2,h3{
+    @include title-style;
+
+  }
+h5{
+  margin:  10px;
+  padding: 0.5em;
+  text-align: center;
+}
+
+
+  .navbar-custom {
+    .navbar-brand,
+    .nav-link {
+      font-family: 'VotrePolice', sans-serif;
+    }
+  }
+
+}
+
+
+
+

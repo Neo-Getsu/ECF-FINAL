@@ -1,0 +1,79 @@
+
+.vehicle-card {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+  margin: 1rem;
+  border: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  .badge {
+    display: inline-block;
+    padding: 0.7em 1em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    background-color: #bb86fc;
+    color: white;
+
+    &.year-badge {
+      background-color: #9b51e0;
+    }
+
+    &.mileage-badge {
+      background-color: #6a1b9a;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  }
+
+  .vehicle-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .vehicle-details {
+    padding: 1rem;
+    text-align: center;
+
+    .vehicle-title {
+      font-size: 1.5rem;
+      color: #bb86fc;
+      font-weight: bold;
+    }
+
+    .vehicle-price {
+      font-size: 1.4rem;
+      color: #ffffff;
+      font-weight: bold;
+      margin: 0.5rem 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .btn-view-details {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #9b51e0;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background-color: #7e57c2;
+        transform: scale(1.02);
+      }
+    }
+  }
+}

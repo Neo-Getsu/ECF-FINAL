@@ -1,0 +1,21 @@
+// Base
+
+@import 'base/variables';
+@import "base/base";
+
+// Components
+@import 'components/navbar';
+@import 'components/footer';
+@import "components/services";
+@import "components/testimonials";
+@import "components/about";
+@import "components/vehiclesList";
+@import "components/vehicleCard";
+
+
+// Pages
+@import 'pages/home';
+@import 'pages/vehicles';
+@import 'pages/contact';
+@import "pages/login";
+

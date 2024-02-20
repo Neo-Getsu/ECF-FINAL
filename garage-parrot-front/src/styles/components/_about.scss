@@ -1,0 +1,78 @@
+.about-section {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 3rem 1rem;
+  margin: 2rem auto;
+  border-left: 4px solid #bb86fc;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(189, 189, 189, 0.2);
+    pointer-events: none;
+  }
+
+
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease-out;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    &:hover::after {
+      transform: scaleX(1);
+    }
+
+  }
+
+  .image-container {
+    text-align: center;
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .separator {
+    height: 2px;
+    background-color: #bb86fc;
+
+
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .col-text {
+    margin-top: 2rem;
+
+    &:hover {
+
+      h2, h3 {
+        color: lighten(#bb86fc, 10%); // Éclaircit légèrement la couleur au survol
+        transition: color ease-in-out 200ms;
+      }
+    }
+  }
+
+  .col-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; // Coins arrondis pour l'image
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); // Ombre portée pour ajouter de la profondeur
+  }
+}

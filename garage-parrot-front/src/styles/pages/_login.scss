@@ -1,0 +1,48 @@
+.login-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #2d2d2d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    input {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #555;
+      border-radius: 4px;
+      &:focus {
+        border-color: #bb86fc;
+      }
+    }
+
+    button {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #bb86fc;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(#bb86fc, 10%);
+      }
+      &:disabled {
+        background-color: darken(#bb86fc, 20%);
+        cursor: not-allowed;
+      }
+    }
+
+    .error {
+      color: #ff6b6b;
+    }
+  }
+}
